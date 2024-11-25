@@ -6,12 +6,14 @@ average3 = sum(grades[2]) / len(grades[2])
 average4 = sum(grades[3]) / len(grades[3])
 average5 = sum(grades[4]) / len(grades[4])
 average_grades = [average1, average2, average3, average4, average5]
-#idk = dict(zip(students, average_grades))
-#print(idk)
-students = list(students)
+idk = dict(zip(students, average_grades))
+print(idk)
+my_list = list(students)
+#student = list(students)
+print(my_list)
 dictionary = {}
-for i in range(len((students))):
-    dictionary[students[i]] = average_grades[i]
+for i in range(len((my_list))):
+    dictionary[list(my_list)[i]] = average_grades[i]
 print(dictionary)
 
 #Не знаю, как сделать так, чтобы имена оставались всегда неизменными
